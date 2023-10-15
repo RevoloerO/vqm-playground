@@ -13,13 +13,35 @@ body{
 
     padding: 0;
     margin: 0;
-    height: 30vh;
+    height: 40vh;
+    min-height: 200px;
     width: 100%;
     align-items: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
 }
 .intro h1{
     width: fit-content;
     height: fit-content;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
+    color:aliceblue;
+    padding: 5px 10px;
+    border-radius: 25%;
 
+    font-size: max(5vw, 24px);
+    min-font
+}
+.intro h2{
+    width: fit-content;
+    height: fit-content;
+    backdrop-filter: blur(3px);
+    color:aliceblue;
+    padding: 5px 10px;
+    border-radius: 25%;
+    align-self: center;
 }
