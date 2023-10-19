@@ -1,17 +1,26 @@
+:root{
+    --theme-color-1: #FAF1E4;
+    --theme-color-2:#CEDEBD;
+    --theme-color-3:#9EB384;
+    --theme-color-4:#435334;
+}
 body{
     width: auto;
     height: auto;
     margin: 0;
     padding: 0;
-}
-.intro{
+    text-align: center;
     background-image: url("images/SaiGon.jpg");
-    background-color: aquamarine;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.title{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 0;
+    padding: 0S 0 0 0;
     margin: 0;
     height: 40vh;
     min-height: 200px;
@@ -21,27 +30,61 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
 
 }
-.intro h1{
+.title h1{
     width: fit-content;
     height: fit-content;
-    backdrop-filter: blur(3px);
-    color:aliceblue;
-    padding: 5px 10px;
+    backdrop-filter: blur(2.5px);
+    color: var(--theme-color-1);
+    text-shadow: 1.5px 1.5px var(--theme-color-4);
+    padding: 10px 20px;
     border-radius: 25%;
-
-    font-size: max(5vw, 24px);
-    min-font
+    font-size: max(5vw, 32px);
+    text-align: center;
 }
-.intro h2{
+.title h2{
     width: fit-content;
     height: fit-content;
     backdrop-filter: blur(3px);
     color:aliceblue;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 25%;
-    align-self: center;
+    
+}
+.introduction {
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-4);
+
+    display: flex;
+    flex-direction: column;
+}
+.banner {
+    background-color: rgba(206, 222, 189,0.65);
+    color: var(--theme-color-4);
+    display: flex;
+    flex-direction: column;
+}
+.banner h3{
+    color:#182608 ;
+}
+.banner p{
+    color: #e3f5cf ;
+}
+.banner-show{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.item figure img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+    .intro{
+        background-image: url("images/SaiGon-high-resolution.jpg");
+  }
 }
